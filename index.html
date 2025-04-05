@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Inscribite</title>
+    <link rel="stylesheet" href="estilo_inscripcion_al_gym.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><p>Inicio</p></li>
+            <li><p>Beneficios</p></li>
+            <li><p>Nuestras sedes</p></li>
+            <li><p>Acerca de nosotros</p></li>
+            <li><p>Asociate</p></li>
+            <li><p>Empresas</p></li>
+        </ul>
+        </nav>
+</header>
+<body>
+    <br>
+    <br>
+    <h1>Asociate a nuestro gimnasio</h1>
+    <div class="personal">
+        <h6 class="paso-uno">Paso 1</h6>
+        <h2>Informacion Personal</h2>
+        <br>
+        <form action="index.php" method="post">
+        <div class="nombre_apellido">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+        </div>
+        <br>
+        <br>
+        <div class="celular_mail">
+            <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+        </div>
+        <br>
+        <br>
+        <div class="fecha_y_genero">
+            <label for="fecha_nacimiento">Fecha de Nacimiento</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            <select id="genero" name="genero" required>
+                <option value="no_seleccionado">Seleccione su género</option>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+        </div>
+        <br>
+        <br>
+        <div class="dni_o_pasaporte">
+            <select name="dni-pasaporte" id="dni-pasaporte" required>
+            <option value="no_seleccionado">Seleccione tipo de documento</option>
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+            </select>
+            <input type="text" id="numero_docpas" name="numero_docpas" placeholder="Número de DNI o Pasaporte"><br><br>
+        </div>
+    </div>
+    <div class="domicilio">
+        <h6 class="paso-dos">Paso 2</h6>
+        <h2>Domicilio</h2>
+        <div class="calle_y_numero">
+            <input type="text" id="calle" name="calle" placeholder="Calle" required>
+            <input type="text" id="numero" name="numero" placeholder="Número" required>
+        </div>
+        <div class="piso_y_depto">
+            <input type="text" id="piso" name="piso" placeholder="Piso">
+            <input type="text" id="depto" name="depto" placeholder="Departamento/Lote">
+        </div>
+        <div class="ciudad_y_provincia">
+            <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+            <input type="text" id="provincia" name="provincia" placeholder="Provincia" required>
+        </div>
+        <div class="codigo_postal">
+            <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Código Postal">
+        </div>
+    </div>
+    <div class="plan">
+        <h6 class="paso-tres">Paso 3</h6>
+        <h2>Elegi tu Plan</h2>
+        <div class="plan_y_horario">
+            <select id="plan" name="plan" required> 
+                <option value="no_seleccionado">Seleccione un plan</option>
+                <option value="basico">Básico</option>
+                <option value="premium">Premium</option>
+            </select><br><br>
+            <select id="horario" name="horario" required>
+                <option value="no_seleccionado">Seleccione un horario</option>
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select><br><br>
+        </div>
+    </div>
+    <input class="boton" type="submit" value="Continuar">
+    </form>
+    <img src="img/gym1.jpg" alt="Imagen de un gimnasio" class="img-gym1">
+    <img src="img/gym2.jpg" alt="Imagen de un gimnasio" class="img-gym2">
+    <img src="img/gym3.jpg" alt="Imagen de un gimnasio" class="img-gym3">
+    <img src="img/gym4.jpg" alt="Imagen de un gimnasio" class="img-gym4">
+</body>
+<footer>
+    <br>
+    <br>
+    <br>
+    <p>Derechos reservados.©</p>
+</footer>
+</html>
